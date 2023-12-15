@@ -9,7 +9,7 @@
           <router-link class="text-sm max-lg:text-2xl opacity-75 hover:opacity-100 transition" exact to="/downloads">Downloads</router-link>
         </li>
         <li class="relative">
-          <router-link class="text-sm max-lg:text-2xl opacity-75 hover:opacity-100 transition" exact to="/servers">Serverlist</router-link>
+          <router-link class="text-sm max-lg:text-2xl opacity-75 hover:opacity-100 transition" exact to="/servers">Servers</router-link>
         </li>
         <li class="relative">
           <a class="text-sm max-lg:text-2xl opacity-75 hover:opacity-100 transition" target="_blank" href="https://docs.ragecoop.com/">Documentation</a>

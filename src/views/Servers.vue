@@ -6,11 +6,11 @@
           <div class="flex lg:flex-col gap-1 bg-black text-white border border-[#272727] rounded-2xl p-3">
             <div class="w-full bg-[#272727] text-center rounded p-2">
               <p>{{ fetched.server_count }}</p>
-              <p class="text-sm">Server online</p>
+              <p class="text-sm">Servers Online</p>
             </div>
             <div class="w-full bg-[#272727] text-center rounded p-2">
               <p>{{ fetched.player_count }}</p>
-              <p class="text-sm">Player online</p>
+              <p class="text-sm">Players Online</p>
             </div>
           </div>
         </div>

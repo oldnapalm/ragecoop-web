@@ -14,7 +14,7 @@
             <div class="p-3">
               <div v-if="nightlyRelease !== null">
                 <h1 class="text-2xl">{{ nightlyRelease.name }}</h1>
-                <p class="text-gray-200">{{ nightlyRelease.published_at }}</p>
+                <p class="text-gray-200">{{ new Date(nightlyRelease.published_at).toDateString() }}</p>
                 <div class="grid">
                   <a v-for="(val, i) in nightlyRelease.assets" :key="i" class="inline-block font-semibold text-yellow-500 hover:text-black uppercase hover:bg-yellow-500 border-2 border-yellow-500 rounded-lg px-4 py-2 mt-2 transition duration-300" :href="val.browser_download_url">
                     {{ val.name }}
@@ -29,7 +29,7 @@
           <div v-if="latestReleases !== null" class="grid gap-y-2">
             <div v-for="(val, i) in latestReleases" :key="i" class="bg-black border border-[#272727] rounded-xl p-4">
               <h1 class="text-2xl">{{ val.name }}</h1>
-              <p class="text-gray-200">{{ val.published_at }}</p>
+              <p class="text-gray-200">{{ new Date(val.published_at).toDateString() }}</p>
               <div class="grid">
                 <a v-for="(download, i) in val.assets" :key="i" class="inline-block font-semibold text-yellow-500 hover:text-black uppercase hover:bg-yellow-500 border-2 border-yellow-500 rounded-lg px-4 py-2 mt-2 transition duration-300" :href="download.browser_download_url">
                   {{ download.name }}

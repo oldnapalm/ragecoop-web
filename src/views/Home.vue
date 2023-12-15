@@ -1,6 +1,6 @@
 <template>
   <main class="mb-6">
-    <section class="relative h-[600px] bg-[url(/home-bg.webp)] flex items-center justify-center rounded-t-2xl">
+    <section class="relative h-[600px] bg-[url(/home-bg.webp)] bg-cover bg-top flex items-center justify-center rounded-t-2xl">
       <div class="z-10 relative text-center px-4">
         <h1 class="font-bold text-white text-4xl uppercase">play offline-online</h1>
         <p class="font-semibold text-gray-200">
@@ -75,17 +75,17 @@
 
     <section>
       <div class="container mx-auto px-4">
-        <div class="relative h-[300px] md:h-[400px] bg-[url(/home-b-bg.jpg)] flex flex-col items-center justify-center rounded-2xl">
+        <div class="relative h-[300px] md:h-[400px] bg-[url(/home-b-bg.jpg)] bg-cover bg-center flex flex-col items-center justify-center rounded-2xl">
           <div class="z-10 relative">
             <div class="text-center">
               <div class="md:flex gap-x-8 text-white">
                 <div class="text-center">
                   <h1 class="font-bold text-2xl md:text-6xl uppercase">{{ fetched.server_count }}</h1>
-                  <p class="font-semibold md:text-xl text-gray-200">Server Online</p>
+                  <p class="font-semibold md:text-xl text-gray-200">Servers Online</p>
                 </div>
                 <div class="text-center">
                   <h1 class="font-bold text-2xl md:text-6xl uppercase">{{ fetched.player_count }}</h1>
-                  <p class="font-semibold md:text-xl text-gray-200">Player Online</p>
+                  <p class="font-semibold md:text-xl text-gray-200">Players Online</p>
                 </div>
               </div>
               <router-link class="inline-block font-semibold text-yellow-500 hover:text-black uppercase hover:bg-yellow-500 border-2 border-yellow-500 rounded-lg px-4 py-2 mt-2 transition duration-300" to="/servers">server list</router-link>
